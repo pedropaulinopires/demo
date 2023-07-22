@@ -18,8 +18,14 @@ public class ControllerMcv {
 
     @GetMapping("/")
     public ModelAndView index() {
-        return new ModelAndView("/index");
+        return new ModelAndView("index");
     }
+    @GetMapping("/***")
+    public ModelAndView errors() {
+        return new ModelAndView("redirect:/");
+    }
+
+
 
     @GetMapping("/pegarImagem/{imagem}")
     @ResponseBody
