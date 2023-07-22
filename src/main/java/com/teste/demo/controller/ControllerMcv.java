@@ -14,7 +14,7 @@ import java.util.List;
 @Controller
 public class ControllerMcv {
 
-    private static final String DIRECTORY = "";
+    private static final String DIRECTORY = "/home/ubuntu/demo/src/main/resources/static/img-produtos";
 
     @GetMapping("/")
     public ModelAndView index() {
