@@ -1,6 +1,7 @@
 package com.teste.demo.controller;
 
 import com.teste.demo.service.UploadImageService;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
@@ -10,13 +11,13 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.util.List;
 
-@org.springframework.stereotype.Controller
-public class Controller {
+@Controller
 
+public class ControllerMcv {
 
     private static final String DIRECTORY = "/home/ubuntu/demo/src/main/resources/static/imgs-produtos";
 
-    @GetMapping
+    @GetMapping("/")
     public ModelAndView index() {
         return new ModelAndView("/index");
     }

@@ -14,7 +14,7 @@ import java.nio.file.Paths;
 @Log4j2
 public class UploadImageService {
 
-    private static final String DIRECTORY = "private static final String DIRECTORY = \"/home/ubuntu/demo/src/main/resources/static/imgs-produtos";
+    private static final String DIRECTORY = "/home/ubuntu/demo/src/main/resources/static/imgs-produtos";
 
 
     public static boolean uploadImage(MultipartFile file, String id) {
